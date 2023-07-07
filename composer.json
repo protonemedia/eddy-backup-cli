@@ -1,0 +1,57 @@
+{
+    "name": "protonemedia/eddy-backup-cli",
+    "description": "Eddy Backup CLI",
+    "homepage": "https://eddy.management",
+    "type": "project",
+    "license": "AGPL-3.0",
+    "support": {
+        "issues": "https://github.com/protonemedia/eddy-backup-cli/issues",
+        "source": "https://github.com/protonemedia/eddy-backup-cli"
+    },
+    "authors": [
+        {
+            "name": "Pascal Baljet",
+            "email": "pascal@protone.media"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/http": "^10.0",
+        "laravel-zero/framework": "^10.0",
+        "laravel/pint": "^1.8",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "league/flysystem-ftp": "^3.0",
+        "league/flysystem-sftp-v3": "^3.0",
+        "mockery/mockery": "^1.5",
+        "nunomaduro/termwind": "^1.15",
+        "pestphp/pest": "^2.5",
+        "spatie/db-dumper": "^3.4",
+        "spatie/temporary-directory": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": [
+        "builds/eddy-backup-cli"
+    ]
+}
